@@ -4,24 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joel Dadzie | WDD 131 </title>
 
+    <!-- SEO -->
+    <meta name="description" content="Joel Dadzie's WDD 131 assignment.">
+
+    <meta name="author" content="Joel Dadzie">
+
+    <title>Joel Dadzie | WDD 131</title>
 
     <link rel="stylesheet" href="styles/layout.css">
+
+    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
 
-
     <header>
         <div class="header-content">
-            <h1>Header Content</h1>
+            <h1>Joel Dadzie | WDD 131</h1>
+            <p>W01 Assignment: Home Page</p>
         </div>
 
-
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
+                <li><a href="#" aria-current="page">Home</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -29,25 +35,33 @@
         </nav>
     </header>
 
-
     <main>
         <section class="main-content">
             <h2>Main Content</h2>
 
+            <p>
+                This is where the primary content of the page will be.
 
+            </p>
         </section>
 
-
         <aside class="aside-content">
-            <h2>Aside Content</h2>
+            <h2>Resources</h2>
 
-
+            <ul>
+                <li><a href="#">HTML Reference</a></li>
+                <li><a href="#">CSS Reference</a></li>
+                <li><a href="#">My Javascripte</a></li>
+            </ul>
         </aside>
     </main>
 
-
     <footer>
-        <h2>Footer Content</h2>
+        <p>
+            &copy; <span id="currentyear"></span> Joel Dadzie | Ghana
+        </p>
+
+        <p id="lastModified"></p>
     </footer>
 
 </body>
