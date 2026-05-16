@@ -8,6 +8,9 @@
 
     --text-color: #1a1a1a;
     --light-text: #fdfcfc;
+
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --black: #000000;
 }
 
 * {
@@ -141,7 +144,7 @@ h1 {
     border: 1px solid var(--card-border);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 .card h2 {
@@ -179,7 +182,7 @@ h1 {
 
 .web-dev-resources a {
     text-decoration: none;
-    color: #000;
+    color: var(--black);
 }
 
 .web-dev-resources li {
