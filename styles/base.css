@@ -1,11 +1,13 @@
 :root {
-    --primary-color: #2b7a8c;
-    --secondary-color: #4ea3b8;
-    --accent-color: #8fd3e2;
-    --background-color: #eaf7fa;
+    --primary-color: #1f5f6f;
+    --secondary-color: #2b7a8c;
+    --accent-color: #5cb3c9;
+    --background-color: #eef7f9;
     --card-background: #ffffff;
-    --card-border: #9fc9d4;
-    --text-color: #000000;
+    --card-border: #8fbac4;
+
+    --text-color: #1a1a1a;
+    --light-text: #ffffff;
 }
 
 * {
@@ -29,7 +31,7 @@ body {
 
 header {
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var(--light-text);
     padding: 1.5rem 1rem;
 }
 
@@ -37,7 +39,7 @@ header {
     display: block;
     text-align: center;
     font-size: 1.6rem;
-    color: var(--text-color);
+    color: var(--light-text);
 }
 
 nav {
@@ -61,7 +63,7 @@ nav a {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--light-text);
     background-color: var(--secondary-color);
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
@@ -144,7 +146,7 @@ h1 {
 
 .card h11 {
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var(--light-text);
     text-align: center;
     padding: 1rem;
     font-size: 1.25rem;
@@ -195,10 +197,15 @@ footer {
     padding: 1rem;
     text-align: center;
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var(--light-text);
     border-radius: 10px;
 }
 
+footer p,
+#lastModified,
+#currentyear {
+    color: var(--light-text);
+}
 
 footer p {
     margin: 0.3rem 0;
