@@ -1,0 +1,50 @@
+@media screen and (min-width: 800px) {
+
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+   
+    .header-top {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .hamburger {
+        display: none;
+    }
+
+
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+   
+
+    #gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+    figure img {
+        height: 250px;
+        object-fit: cover;
+    }
+}

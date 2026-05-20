@@ -1,0 +1,168 @@
+
+
+:root {
+    --primary-color: #024ea2;
+    --primary-color-bottom: #3d5b12;
+    --secondary-color: #f4f4f4;
+    --accent-color: #d4af37;
+    --text-color: #222;
+    --white: #ffffff;
+}
+
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cinzel-regular {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cinzel-bold {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+}
+
+
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#temples {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Cinzel', serif;
+    color: var(--primary-color);
+}
+
+
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
+
+figure {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+figcaption {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+
+
+footer {
+    background-color: var(--primary-color-bottom);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
