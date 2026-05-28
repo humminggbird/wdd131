@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accra, Ghana | Joel Dadzie</title>
+
+    <meta name="description" content="Important facts about the capital city, Accra, of Ghana.">
+
+    <meta name="author" content="Joel Dadzie">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Accra, Ghana</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+
+                <source srcset="images/ghana-large.webp" media="(min-width: 768px)">
+
+                <img src="images/ghana-small.webp" alt="A picture of the Independence Arch or Black Star Gate."
+                    class="hero-image" width="768" height="512">
+
+            </picture>
+        </section>
+
+        <section class="card data-card">
+
+            <h11>Data</h11>
+
+            <div class="grid">
+
+                <div class="label">Country:</div>
+                <div class="value">Ghana</div>
+
+                <div class="label">Capital:</div>
+                <div class="value">Accra</div>
+
+                <div class="label">Population:</div>
+                <div class="value">34 Million</div>
+
+                <div class="label">Official Language:</div>
+                <div class="value">English</div>
+
+                <div class="label">Currency:</div>
+                <div class="value">Ghana Cedi (GH₵)</div>
+
+                <div class="label">Time Zone:</div>
+                <div class="value">UTC +0</div>
+
+                <div class="label">Internet TLD:</div>
+                <div class="value">.gh</div>
+
+                <div class="label">Famous For:</div>
+                <div class="value">
+                    Independence Square, beaches, kente cloth, and the best jollof rice.
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="card weather-card">
+
+            <h11 class="weather-heading">Weather</h11>
+
+            <img src="images/weather.svg" alt="" aria-hidden="true" class="weather-icon">
+
+            <div class="grid">
+
+                <div class="label">Temperature:</div>
+                <div class="value">
+                    <span id="temp">28</span> °C
+                </div>
+
+                <div class="label">Conditions:</div>
+                <div class="value">Sunny</div>
+
+                <div class="label">Feels Like:</div>
+                <div class="value">31 °C</div>
+
+                <div class="label">High / Low:</div>
+                <div class="value">32 °C / 24 °C</div>
+
+                <div class="label">Wind Speed:</div>
+                <div class="value">
+                    <span id="speed">10</span> km/h
+                </div>
+
+                <div class="label">Humidity:</div>
+                <div class="value">75%</div>
+
+                <div class="label">Visibility:</div>
+                <div class="value">10 km</div>
+
+                <div class="label">UV Index:</div>
+                <div class="value">High</div>
+
+                <div class="label">Wind Chill:</div>
+                <div class="value" id="windchill"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            🇬🇭 Joel Dadzie 🇬🇭 Accra, Ghana
+        </p>
+
+        <p id="lastModified"></p>
+
+        <p class="credits">
+            Got background image from Unsplash
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

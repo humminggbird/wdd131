@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+
+    main {
+        position: relative;
+    }
+
+    .data-card {
+        position: absolute;
+        top: 4rem;
+        left: 2rem;
+        width: 380px;
+    }
+
+    .weather-card {
+        position: absolute;
+        bottom: 4rem;
+        right: 2rem;
+        width: 300px;
+    }
+
+    .weather-heading::after {
+        content: " ⛅";
+    }
+
+    .weather-icon {
+        display: none;
+    }
+}
