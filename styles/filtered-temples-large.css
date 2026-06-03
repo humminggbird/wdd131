@@ -1,0 +1,37 @@
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    #nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        margin-top: 0;
+    }
+
+    #nav-menu a {
+        padding: 0.5rem 1rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

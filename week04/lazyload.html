@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Demonstration | Joel Dadzie</title>
+    <meta name="description"
+        content="A demonstration of lazy loading images so the page only uses necessary resources.">
+    <meta name="author" content="Joel Dadzie">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <h1>Lazy Load Demonstration</h1>
+        <img src="../images/aba-nigeria-temple.jpg" alt="Aba Nigeria Temple" loading="lazy" width="400" height="600">
+        <img src="../images/abidjan-ivory-coast-temple.jpg" alt="Abidjan Ivory Coast Temple" loading="lazy" width="400"
+            height="600">
+        <img src="../images/accra-ghana-temple.jpg" alt="Accra Ghana Temple" loading="lazy" width="400" height="600">
+        <img src="../images/benin-city-nigeria-temple.jpg" alt="Benin City Nigeria Temple" loading="lazy" width="400"
+            height="600">
+        <img src="../images/kinshasa-drc-temple.jpg" alt="Kinshasa DRC Temple" loading="lazy" width="400" height="600">
+        <img src="../images/kumasi-ghana-temple.jpg" alt="Kumasi Ghana Temple" loading="lazy" width="400" height="600">
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Joel Dadzie | Ghana
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/lazyload.js" defer></script>
+</body>
+
+</html>
