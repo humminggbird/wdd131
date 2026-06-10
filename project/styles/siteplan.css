@@ -1,0 +1,189 @@
+:root {
+    --green: #006B3F;
+    --gold: #F4C430;
+    --red: #CE1126;
+    --cream: #F8F4EA;
+    --text: #2B2B2B;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+header {
+    background: var(--green);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-bottom: 8px solid var(--gold);
+}
+
+.header-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: .75rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    opacity: .95;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 18px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, .05),
+        0 12px 24px rgba(0, 0, 0, .06);
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: var(--green);
+    margin-bottom: 1.25rem;
+    padding-left: 1rem;
+    border-left: 6px solid var(--gold);
+}
+
+h3 {
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: .75rem;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.color-box {
+    text-align: center;
+}
+
+.swatch {
+    height: 100px;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+}
+
+.green {
+    background: #006B3F;
+}
+
+.gold {
+    background: #F4C430;
+}
+
+.red {
+    background: #CE1126;
+}
+
+.cream {
+    background: #F8F4EA;
+    border: 1px solid #ddd;
+}
+
+.archivo-title {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.cinzel-title {
+    font-family: 'Cinzel', serif;
+}
+
+.dm-title {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.wireframe-desktop,
+.wireframe-mobile {
+
+    height: 30%;
+    width: 50%;
+}
+
+figure {
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+footer {
+    background: var(--green);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}
