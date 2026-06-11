@@ -1,0 +1,82 @@
+:root {
+    --primary: #4b004f;
+    --secondary: #d8d2da;
+    --accent: #f4c430;
+    --white: #ffffff;
+    --text: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+}
+
+.confirmation {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--secondary);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.confirmation h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.counter-box {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+#reviewCount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.button:hover {
+    background: #350038;
+}
+
+footer {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+}
