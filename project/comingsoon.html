@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChopBetter! | Ghanaian Daily Meal Companion</title>
+    <meta name="description"
+        content="ChopBetter is your daily Ghanaian meal companion, helping you discover healthy, delicious, and culturally authentic recipes.">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/discovery.css">
+    <link rel="stylesheet" href="styles/nutrition-tip.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/comingsoon.css">
+
+    <script src="scripts/main.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="kente-banner" aria-hidden="true"></div>
+
+        <div class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <img src="images/chopbetter-logo.jpeg" alt="ChopBetter Logo" class="logo-icon">
+                <div class="logo-text-container">
+                    <span class="brand-name">ChopBetter!</span>
+                    <span class="tagline">The Ghanaian Daily Meal Companion</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+
+            <button class="user-profile-btn" aria-label="User Profile" id="profileBtn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" />
+                </svg>
+            </button>
+        </div>
+        </div>
+    </header>
+
+
+    <main class="coming-soon-section">
+        <div class="container coming-soon-layout">
+            <h1 class="coming-soon-title">Coming Soon</h1>
+            <p class="coming-soon-subtitle">We're still preparing this page. Check back soon.</p>
+            <a href="index.html" class="btn-primary">Back to Home</a>
+        </div>
+    </main>
+
+
+    <footer class="main-footer">
+        <div class="container nutrition-tip-wrapper">
+            <div class="nutrition-tip-banner">
+                <div class="tip-content">
+                    <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                    </svg>
+                    <div class="tip-text">
+                        <span class="tip-title">Nutrition Tip</span>
+                        <span class="tip-desc">A balanced Ghanaian meal includes half a plate of vegetables, a quarter
+                            plate of protein, and a quarter plate of complex carbohydrates like yam or plantain.</span>
+                    </div>
+                </div>
+                <div class="tip-image-container">
+                    <img src="images/produce_basket.png" alt="Fresh fruits and vegetables basket">
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-content">
+            <p>&copy; <span id="currentYear"></span> 🇬🇭 Joel Dadzie 🇬🇭 Accra, Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+
+
+.profile-setup-section {
+    background-color: var(--warm-cream);
+    padding: 48px 0 64px;
+}
+
+.welcome-back-banner {
+    background-color: var(--white);
+    border: 1px solid rgba(228, 178, 33, 0.35);
+    border-left: 4px solid var(--primary-gold);
+    border-radius: var(--radius-btn);
+    box-shadow: var(--shadow-soft);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+    color: var(--dark-charcoal);
+}
+
+.welcome-back-banner.hidden {
+    display: none;
+}
+
+.welcome-icon {
+    font-size: 1.25rem;
+}
+
+.welcome-text strong {
+    color: var(--primary-green);
+}
+
+.page-heading {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.page-title {
+    font-family: var(--font-heading);
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--cocoa-brown);
+    line-height: 1.1;
+}
+
+.page-subtitle {
+    font-family: var(--font-body);
+    font-size: 18px;
+    color: var(--text-gray);
+    margin-top: 8px;
+}
+
+.progress-stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto 48px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-family: var(--font-body);
+    background-color: var(--white);
+    border: 2px solid #CCCCCC;
+    color: var(--text-gray);
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.step.active .step-circle {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--white);
+}
+
+.step.completed .step-circle {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--white);
+}
+
+.step-label {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--dark-charcoal);
+    white-space: nowrap;
+}
+
+.step-line {
+    height: 2px;
+    background-color: #CCCCCC;
+    flex: 1;
+    margin: 0 12px;
+    margin-bottom: 24px;
+}
+
+.form-grid {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.top-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottom-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.profile-card {
+    background-color: var(--white);
+    border-radius: var(--radius-card);
+    border: var(--border-light);
+    box-shadow: var(--shadow-soft);
+    padding: 24px;
+}
+
+.card-title {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--cocoa-brown);
+    margin-bottom: 8px;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 20px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.field-group.full-width {
+    width: 100%;
+}
+
+.field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.field-group label,
+.sub-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-charcoal);
+}
+
+.field-group input[type="text"],
+.field-group input[type="number"],
+.field-group select {
+    height: 52px;
+    border: 1px solid #DDDDDD;
+    border-radius: 12px;
+    background-color: var(--white);
+    padding: 0 16px;
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--dark-charcoal);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+}
+
+.field-group input[type="text"]:focus,
+.field-group input[type="number"]:focus,
+.field-group select:focus {
+    border-color: var(--primary-gold);
+    box-shadow: 0 0 0 3px rgba(228, 178, 33, 0.2);
+}
+
+
+
+
+
+.radio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.radio-list.inline {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--dark-charcoal);
+}
+
+.radio-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-control {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #CCCCCC;
+    background-color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: border-color 0.2s ease;
+}
+
+.radio-control::after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: var(--primary-green);
+    transform: scale(0);
+    transition: transform 0.15s ease;
+}
+
+.radio-option input[type="radio"]:checked+.radio-control {
+    border-color: var(--primary-green);
+}
+
+.radio-option input[type="radio"]:checked+.radio-control::after {
+    transform: scale(1);
+}
+
+.radio-option input[type="radio"]:focus-visible+.radio-control {
+    box-shadow: 0 0 0 3px rgba(228, 178, 33, 0.3);
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 12px;
+    margin-bottom: 16px;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--dark-charcoal);
+}
+
+.checkbox-option input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox-control {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    border: 2px solid #CCCCCC;
+    background-color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    position: relative;
+}
+
+.checkbox-control::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
+    border: solid var(--white);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.15s ease;
+}
+
+.checkbox-option input[type="checkbox"]:checked+.checkbox-control {
+    border-color: var(--primary-green);
+    background-color: var(--primary-green);
+}
+
+.checkbox-option input[type="checkbox"]:checked+.checkbox-control::after {
+    transform: rotate(45deg) scale(1);
+}
+
+.checkbox-option input[type="checkbox"]:focus-visible+.checkbox-control {
+    box-shadow: 0 0 0 3px rgba(228, 178, 33, 0.3);
+}
+
+.standalone-option {
+    padding-top: 4px;
+    border-top: var(--border-light);
+    padding-top: 16px;
+}
+
+.sub-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sub-label {
+    display: block;
+}
+
+/* ---- Action Area ---- */
+.action-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.action-area .btn-primary,
+.action-area .btn-secondary {
+    min-width: 220px;
+    height: 56px;
+    padding: 0 40px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-area .btn-primary {
+    background-color: var(--primary-green);
+    color: var(--white);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-area .btn-primary:hover {
+    background-color: var(--primary-green-dark);
+    transform: translateY(-2px);
+}
+
+.action-area .btn-secondary {
+    background-color: var(--white);
+    border: 2px solid var(--primary-gold);
+    color: var(--primary-gold-dark);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-area .btn-secondary:hover {
+    background-color: var(--warm-cream-alt);
+    transform: translateY(-2px);
+}
+
+.profile-toast {
+    padding: 12px 24px;
+    background-color: var(--primary-green-dark);
+    color: var(--white);
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 15px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.profile-toast.hidden {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.profile-toast.toast-error {
+    background-color: #C54A3C;
+}
+
+.field-group input.field-invalid,
+.field-group select.field-invalid {
+    border-color: #C54A3C;
+}
+
+.field-error-msg {
+    font-size: 12.5px;
+    color: #C54A3C;
+    margin-top: -2px;
+}

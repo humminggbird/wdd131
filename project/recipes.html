@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | ChopBetter</title>
+    <meta name="description" content="Discover and browse traditional Ghanaian recipes on ChopBetter.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/recipes.css">
+    <link rel="stylesheet" href="styles/nutrition-tip.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+        <header>
+            <div class="kente-banner" aria-hidden="true"></div>
+        
+            <div class="main-header">
+                <div class="container">
+                    <div class="logo-area">
+                        <a href="index.html">
+                            <img src="images/chopbetter-logo.jpeg" alt="ChopBetter Logo" class="logo-icon">
+                        </a>
+                        <div class="logo-text-container">
+                            <span class="brand-name">ChopBetter!</span>
+                            <span class="tagline">The Ghanaian Daily Meal Companion</span>
+                        </div>
+                    </div>
+        
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="recipes.html" class="active">Recipes</a></li>
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </nav>
+        
+                    <button class="user-profile-btn" aria-label="User Profile" id="profileBtn">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+    <main>
+        <section class="recipes-hero">
+            <div class="container">
+                <h1 class="recipes-title">Browse Recipes</h1>
+                <p class="recipes-subtitle">Find healthy and delicious Ghanaian meals.</p>
+
+                <div class="search-controls">
+                    <div class="search-input-group">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" class="search-input" placeholder="Search recipes...">
+                    </div>
+                    <button class="btn-search">Search</button>
+                    <button class="btn-filters">
+                        <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                        </svg>
+                        Filters
+                    </button>
+                </div>
+
+                <div class="filter-chips">
+                    <button class="chip">Region <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg></button>
+                    <button class="chip">Meal Type <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg></button>
+                    <button class="chip">Prep Time <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg></button>
+                    <button class="chip">Cost <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg></button>
+                    <button class="chip">Difficulty <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipe-discovery">
+            <div class="container discovery-layout">
+                <aside class="region-sidebar">
+                    <h2 class="sidebar-title">Browse By Region</h2>
+
+                    <ul class="region-menu">
+                        <li class="active" data-region="all">
+                            <span class="icon">🌍</span> All Regions
+                        </li>
+
+                        <li data-region="ashanti">
+                            <span class="icon">👑</span> Ashanti
+                        </li>
+
+                        <li data-region="greater-accra">
+                            <span class="icon">🌊</span> Greater Accra
+                        </li>
+
+                        <li data-region="volta">
+                            <span class="icon">⛰️</span> Volta
+                        </li>
+
+                        <li data-region="northern">
+                            <span class="icon">🏜️</span> Northern
+                        </li>
+
+                        <li data-region="eastern">
+                            <span class="icon">🌳</span> Eastern
+                        </li>
+
+                        <li data-region="western">
+                            <span class="icon">🏖️</span> Western
+                        </li>
+
+                        <li data-region="central">
+                            <span class="icon">🏰</span> Central
+                        </li>
+
+                        <li data-region="bono">
+                            <span class="icon">🌿</span> Bono
+                        </li>
+
+                        <li data-region="upper-east">
+                            <span class="icon">☀️</span> Upper East
+                        </li>
+
+                        <li data-region="upper-west">
+                            <span class="icon">🐪</span> Upper West
+                        </li>
+                    </ul>
+                </aside>
+
+                <div class="recipe-grid-container">
+
+                    <div class="recipe-grid-card" data-region="all">
+                        <a href="recipe-details-jollof.html" class="card-link">
+                            <div class="card-image-wrap">
+                                <img src="images/jollof_rice.png" alt="Jollof Rice">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Jollof Rice</h3>
+                                <div class="card-meta">
+                                    <span class="time"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg> 40 mins</span>
+                                    <span class="dot">•</span>
+                                    <span class="difficulty diff-easy">Easy</span>
+                                </div>
+                            </div>
+                        </a>
+                        <button class="btn-favorite" aria-label="Save Recipe">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="recipe-grid-card" data-region="ashanti greater-accra western central">
+                        <a href="recipe-details-fufu.html" class="card-link">
+                            <div class="card-image-wrap">
+                                <img src="images/fufu_soup.png" alt="Fufu & Light Soup">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Fufu & Light Soup</h3>
+                                <div class="card-meta">
+                                    <span class="time"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg> 30 mins</span>
+                                    <span class="dot">•</span>
+                                    <span class="difficulty diff-medium">Medium</span>
+                                </div>
+                            </div>
+                        </a>
+                        <button class="btn-favorite" aria-label="Save Recipe">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="recipe-grid-card" data-region="ashanti greater-accra volta upper-east upper-west">
+                        <a href="recipe-details.html" class="card-link">
+                            <div class="card-image-wrap">
+                                <img src="images/waakye_meal.jpg" alt="Waakye">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Waakye</h3>
+                                <div class="card-meta">
+                                    <span class="time"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg> 35 mins</span>
+                                    <span class="dot">•</span>
+                                    <span class="difficulty diff-easy">Easy</span>
+                                </div>
+                            </div>
+                        </a>
+                        <button class="btn-favorite" aria-label="Save Recipe">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="recipe-grid-card" data-region="ashanti greater-accra western central">
+                        <a href="recipe-details-banku.html" class="card-link">
+                            <div class="card-image-wrap">
+                                <img src="images/banku_tilapia.png" alt="Banku & Tilapia">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Banku & Tilapia</h3>
+                                <div class="card-meta">
+                                    <span class="time"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg> 45 mins</span>
+                                    <span class="dot">•</span>
+                                    <span class="difficulty diff-medium">Medium</span>
+                                </div>
+                            </div>
+                        </a>
+                        <button class="btn-favorite" aria-label="Save Recipe">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container nutrition-tip-wrapper">
+            <div class="nutrition-tip-banner">
+                <div class="tip-content">
+                    <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                    </svg>
+                    <div class="tip-text">
+                        <span class="tip-title">Nutrition Tip</span>
+                        <span class="tip-desc">A balanced Ghanaian meal includes half a plate of vegetables, a quarter
+                            plate of protein, and a quarter plate of complex carbohydrates like yam or plantain.</span>
+                    </div>
+                </div>
+                <div class="tip-image-container">
+                    <img src="images/produce_basket.png" alt="Fresh fruits and vegetables basket">
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-content">
+            <p>&copy; <span id="currentYear"></span> 🇬🇭 Joel Dadzie 🇬🇭 Accra, Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

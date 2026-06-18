@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChopBetter! | Ghanaian Daily Meal Companion</title>
+    <meta name="author" content="Joel Dadzie">
+    <meta name="description" content="ChopBetter is your daily Ghanaian meal companion, helping you discover healthy, delicious, and culturally authentic recipes.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/discovery.css">
+    <link rel="stylesheet" href="styles/nutrition-tip.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+     <div class="kente-banner" aria-hidden="true"></div>
+
+     <div class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <img src="images/chopbetter-logo.jpeg" alt="ChopBetter Logo" class="logo-icon">
+                <div class="logo-text-container">
+                    <span class="brand-name">ChopBetter!</span>
+                    <span class="tagline">The Ghanaian Daily Meal Companion</span>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            
+            
+            <button class="user-profile-btn" aria-label="User Profile" id="profileBtn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"/>
+                </svg>
+            </button>
+
+        </div>
+     </div>
+    </header>
+
+    <main>
+     <section class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text-area">
+                <h1 class="hero-headline">What Should I Eat Today?</h1>
+                <p class="hero-subheadline">Healthy. Delicious. Ghanaian.</p>
+                <a href="comingsoon.html" class="cta-button">Get My Recommendation</a>
+            </div>
+            <div class="hero-image-area">
+                <img src="images/hero_meal.webp" alt="A delicious Ghanaian meal in a bowl" class="hero-image">
+            </div>
+        </div>
+     </section>
+
+     <section class="discovery-section">
+        <div class="container discovery-grid">
+            
+            <div class="discovery-card recommendation-card">
+                <h2 class="card-header">Today's Recommendation</h2>
+                <div class="recommendation-content">
+                    <img src="images/waakye_meal.jpg" alt="Waakye with Fish" class="recommendation-image">
+                    <div class="recommendation-details">
+                        <h3 class="meal-title">Waakye with Fish</h3>
+                        <p class="meal-desc">A classic combination of rice and beans, served with spicy sauce and fried fish for a protein-packed meal.</p>
+                        
+                        <div class="nutrition-stats">
+                            <div class="stat-item">
+                                <svg class="stat-icon" viewBox="0 0 24 24">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+                                <span class="stat-value">650</span>
+                                <span class="stat-label">Calories</span>
+                            </div>
+                            <div class="stat-item">
+                                <svg class="stat-icon" viewBox="0 0 24 24">
+                                    <path d="M6.343 17.657l-1.414 1.414a2 2 0 01-2.828 0l-.001-.001a2 2 0 010-2.828l1.414-1.414m17.657 0l1.414 1.414a2 2 0 010 2.828l-.001.001a2 2 0 01-2.828 0l-1.414-1.414m-10.607-4.242A5.982 5.982 0 0012 18a5.982 5.982 0 004.243-1.757m-8.486-8.486A5.982 5.982 0 0112 6a5.982 5.982 0 014.243 1.757M12 2v2m0 16v2m8-10h2M2 12h2"/>
+                                </svg>
+                                <span class="stat-value">35g</span>
+                                <span class="stat-label">Protein</span>
+                            </div>
+                            <div class="stat-item">
+                                <svg class="stat-icon" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span class="stat-value">45m</span>
+                                <span class="stat-label">Prep Time</span>
+                            </div>
+                        </div>
+                        <a href="recipe-details.html" class="recipe-btn">View Recipe Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="discovery-card region-card">
+                <h2 class="card-header">Browse by Region</h2>
+                <div class="region-list">
+                    <div class="region-item" data-region="ashanti">
+                        <div class="region-icon">AS</div>
+                        <span class="region-name">Ashanti</span>
+                        <svg class="region-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </div>
+                    <div class="region-item" data-region="greater-accra">
+                        <div class="region-icon">GA</div>
+                        <span class="region-name">Greater Accra</span>
+                        <svg class="region-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </div>
+                    <div class="region-item" data-region="volta">
+                        <div class="region-icon">VO</div>
+                        <span class="region-name">Volta</span>
+                        <svg class="region-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </div>
+                    <div class="region-item" data-region="northern">
+                        <div class="region-icon">NO</div>
+                        <span class="region-name">Northern</span>
+                        <svg class="region-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </div>
+                    <div class="region-item" data-region="eastern">
+                        <div class="region-icon">EA</div>
+                        <span class="region-name">Eastern</span>
+                        <svg class="region-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </div>
+                    <div class="region-item" data-region="western">
+                        <div class="region-icon">WE</div>
+                        <span class="region-name">Western</span>
+                        <svg class="region-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="discovery-card recipes-card">
+                <h2 class="card-header">Popular Recipes</h2>
+                <div class="recipe-grid">
+                    <a href="recipe-details-jollof.html">
+                        <div class="recipe-item">
+                            <img src="images/jollof_meal_hero.jpg" alt="Jollof Rice" class="recipe-thumb">
+                            <div class="recipe-info">
+                                <span class="recipe-name">Jollof Rice</span>
+                                <div class="recipe-meta">
+                                    <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                                    </svg>
+                                    <span>1h 15m</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                 <a href="recipe-details-fufu.html">
+                    <div class="recipe-item">
+                        <img src="images/fufu_soup_hero.jpg" alt="Fufu & Light Soup" class="recipe-thumb">
+                        <div class="recipe-info">
+                            <span class="recipe-name">Fufu & Light Soup</span>
+                            <div class="recipe-meta">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span>2h 30m</span>
+                            </div>
+                        </div>
+                    </div>
+                 </a>
+                 <a href="recipe-details-banku.html">
+                    <div class="recipe-item">
+                        <img src="images/banku_tilapia_hero.webp" alt="Banku & Tilapia" class="recipe-thumb">
+                        <div class="recipe-info">
+                            <span class="recipe-name">Banku & Tilapia</span>
+                            <div class="recipe-meta">
+                                <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span>55m</span>
+                            </div>
+                        </div>
+                    </div>
+                 </a>
+                </div>
+            </div>
+
+        </div>
+     </section>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="container nutrition-tip-wrapper">
+            <div class="nutrition-tip-banner">
+                <div class="tip-content">
+                    <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                    </svg>
+                    <div class="tip-text">
+                        <span class="tip-title">Nutrition Tip</span>
+                        <span class="tip-desc">A balanced Ghanaian meal includes half a plate of vegetables, a quarter plate of protein, and a quarter plate of complex carbohydrates like yam or plantain.</span>
+                    </div>
+                </div>
+                <div class="tip-image-container">
+                    <img src="images/produce_basket.png" alt="Fresh fruits and vegetables basket">
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-content">
+            <p>&copy; <span id="currentYear"></span> 🇬🇭 Joel Dadzie 🇬🇭 Accra, Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

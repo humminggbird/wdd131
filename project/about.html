@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | ChopBetter</title>
+
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/nutrition-tip.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/about.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/about.js" defer></script>
+</head>
+
+<body>
+    
+    <header>
+        <div class="kente-banner" aria-hidden="true"></div>
+
+        <div class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="images/chopbetter-logo.jpeg" alt="ChopBetter Logo" class="logo-icon">
+                </a>
+                <div class="logo-text-container">
+                    <span class="brand-name">ChopBetter!</span>
+                    <span class="tagline">The Ghanaian Daily Meal Companion</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                </ul>
+            </nav>
+
+            <button class="user-profile-btn" aria-label="User Profile" id="profileBtn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" />
+                </svg>
+            </button>
+        </div>
+       </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+        <div class="container hero-about-layout">
+
+            <div class="about-hero-text">
+                <p class="about-welcome-msg" id="aboutWelcomeMsg" style="display:none;"></p>
+
+                <h1 class="about-hero-heading">About<br>ChopBetter!</h1>
+                <p class="about-hero-subtitle">Healthy eating made simple for Ghanaians.</p>
+
+                <div class="about-divider" aria-hidden="true">
+                    <svg viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <line x1="0" y1="10" x2="45" y2="10" stroke="#0B5A34" stroke-width="1.5"
+                            stroke-dasharray="4 3" />
+                        <circle cx="60" cy="10" r="5" fill="#E4B221" />
+                        <line x1="75" y1="10" x2="120" y2="10" stroke="#0B5A34" stroke-width="1.5"
+                            stroke-dasharray="4 3" />
+                    </svg>
+                </div>
+
+                <h2 class="about-mission-heading">Our Mission</h2>
+                <p class="about-mission-text">
+                    Eating well in Ghana should not feel like a guessing game. Our traditional meals — waakye, fufu,
+                    jollof, banku — are rich in flavour and history, but most of us have no easy way to understand their
+                    nutritional impact or how to balance them day to day.
+                </p>
+                <p class="about-mission-text">
+                    ChopBetter was built to change that. We combine the wisdom of Ghanaian food culture with practical
+                    nutritional guidance so that every Ghanaian — whether in Accra, Kumasi, or the diaspora — can eat
+                    confidently, affordably, and well.
+                </p>
+                <p class="about-mission-text">
+                    We believe that good health should feel familiar, not foreign. That is why every recommendation on
+                    this platform begins with the foods you already love.
+                </p>
+            </div>
+
+            <div class="about-hero-image">
+                <img src="images/family_meal.jpeg" alt="A Ghanaian family sharing a healthy meal together">
+            </div>
+
+        </div>
+        </section>
+
+        <section class="about-info-grid">
+        <div class="container about-info-layout">
+
+            <div class="about-card about-how-it-works">
+                <h2 class="about-card-heading">How It Works</h2>
+
+                <div class="hiw-steps">
+                    <div class="hiw-step">
+                        <div class="hiw-step-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <span class="hiw-step-num">1</span>
+                        <h3 class="hiw-step-title">Create Profile</h3>
+                        <p class="hiw-step-desc">Tell us your health goals, dietary needs, and the Ghanaian foods you
+                            enjoy most.</p>
+                    </div>
+
+                    <div class="hiw-connector" aria-hidden="true">
+                        <svg viewBox="0 0 40 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 8 H32 M28 3 L38 8 L28 13" stroke="#CCCCCC" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                    <div class="hiw-step">
+                        <div class="hiw-step-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12 2C11.5 2 11 2.5 11 3C11 3.5 11.5 4 12 4C12.5 4 13 4.5 13 5C13 5.5 12.5 6 12 6C11.5 6 11 6.5 11 7" />
+                                <path d="M8 3C7.5 3 7 3.5 7 4C7 4.5 7.5 5 8 5C8.5 5 9 5.5 9 6C9 6.5 8.5 7 8 7" />
+                                <path
+                                    d="M16 3C15.5 3 15 3.5 15 4C15 4.5 15.5 5 16 5C16.5 5 17 5.5 17 6C17 6.5 16.5 7 16 7" />
+                                <path d="M2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12H2Z" fill="currentColor"
+                                    stroke="none" />
+                            </svg>
+                        </div>
+                        <span class="hiw-step-num">2</span>
+                        <h3 class="hiw-step-title">Get Recommendations</h3>
+                        <p class="hiw-step-desc">Our platform suggests balanced Ghanaian meals tailored to your goals
+                            and preferences.</p>
+                    </div>
+
+                    <div class="hiw-connector" aria-hidden="true">
+                        <svg viewBox="0 0 40 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 8 H32 M28 3 L38 8 L28 13" stroke="#CCCCCC" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                    <div class="hiw-step">
+                        <div class="hiw-step-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10" />
+                                <line x1="12" y1="20" x2="12" y2="4" />
+                                <line x1="6" y1="20" x2="6" y2="14" />
+                            </svg>
+                        </div>
+                        <span class="hiw-step-num">3</span>
+                        <h3 class="hiw-step-title">Track Progress</h3>
+                        <p class="hiw-step-desc">Log your meals, monitor your nutrition, and watch your healthy streak
+                            grow over time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card about-philosophy">
+                <h2 class="about-card-heading">Our Nutritional Philosophy</h2>
+
+                <div class="philosophy-list">
+                    <div class="philosophy-item">
+                        <div class="philosophy-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
+                                <path d="M12 8V12L15 15" />
+                            </svg>
+                        </div>
+                        <div class="philosophy-text">
+                            <h3 class="philosophy-title">Balance</h3>
+                            <p class="philosophy-desc">Every recommendation blends carbohydrates, proteins, vegetables,
+                                and healthy fats in the right proportions.</p>
+                        </div>
+                    </div>
+
+                    <div class="philosophy-item">
+                        <div class="philosophy-icon-wrap philosophy-icon--gold">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg>
+                        </div>
+                        <div class="philosophy-text">
+                            <h3 class="philosophy-title">Local First</h3>
+                            <p class="philosophy-desc">We prioritise Ghanaian produce and ingredients — the foods
+                                already in your market, your kitchen, your culture.</p>
+                        </div>
+                    </div>
+
+                    <div class="philosophy-item">
+                        <div class="philosophy-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <div class="philosophy-text">
+                            <h3 class="philosophy-title">Practical</h3>
+                            <p class="philosophy-desc">We design for real Ghanaian lives — affordable ingredients,
+                                realistic portions, and meals that fit your budget.</p>
+                        </div>
+                    </div>
+
+                    <div class="philosophy-item">
+                        <div class="philosophy-icon-wrap philosophy-icon--gold">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                            </svg>
+                        </div>
+                        <div class="philosophy-text">
+                            <h3 class="philosophy-title">Sustainable</h3>
+                            <p class="philosophy-desc">We help you build long-term habits, not short-term diets. Small,
+                                consistent choices lead to lasting good health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </section>
+
+        <section class="about-faq-section">
+        <div class="container about-info-layout">
+
+            <div class="about-card about-faq-card">
+                <h2 class="about-card-heading">Frequently Asked Questions</h2>
+
+                <div class="faq-list">
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Are calorie counts accurate for Ghanaian portions?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We calculate nutritional values based on standard Ghanaian serving sizes drawn from the
+                                Ghana Food Composition Tables and community-validated portion data. While every home
+                                cooks differently, our estimates are calibrated to realistic local servings — not
+                                Western cup measures — so the numbers you see are as close to your actual plate as
+                                possible.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can I use ChopBetter if I have diabetes?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>ChopBetter can be a helpful companion for anyone managing blood sugar, but it is not a
+                                substitute for medical advice. You can set a low-glycaemic goal in your profile and we
+                                will surface recipes lower in refined carbohydrates. We always recommend discussing
+                                specific dietary changes with a qualified healthcare provider.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can I exclude certain foods or ingredients?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. In your profile settings you can flag allergies, intolerances, or personal
+                                preferences — from specific proteins like shellfish to entire food groups. ChopBetter
+                                will filter those ingredients out of all recommendations and meal plans automatically.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Does ChopBetter replace a nutritionist?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No — and we are honest about that. ChopBetter is a practical daily tool to help you make
+                                better food choices within Ghanaian food culture. For clinical nutrition management,
+                                complex health conditions, or personalised medical dietary plans, please consult a
+                                registered dietitian or healthcare professional.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Is ChopBetter free to use?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The core features of ChopBetter — recipe discovery, nutritional information, and basic
+                                meal tracking — are free for all users. We are committed to keeping healthy eating
+                                guidance accessible to every Ghanaian, regardless of income.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="about-card about-sources-card">
+                <h2 class="about-card-heading">Our Data Sources</h2>
+                <p class="about-sources-intro">Our nutritional data is grounded in credible, peer-reviewed, and
+                    government-recognised references so you can trust the numbers on your plate.</p>
+
+                <ul class="sources-list">
+                    <li class="source-item">
+                        <div class="source-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <div class="source-text">
+                            <span class="source-name">Ghana Food Composition Tables</span>
+                            <span class="source-detail">Ghana Health Service / CSIR-INFS</span>
+                        </div>
+                    </li>
+                    <li class="source-item">
+                        <div class="source-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <div class="source-text">
+                            <span class="source-name">USDA FoodData Central</span>
+                            <span class="source-detail">U.S. Department of Agriculture</span>
+                        </div>
+                    </li>
+                    <li class="source-item">
+                        <div class="source-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <div class="source-text">
+                            <span class="source-name">West African Food Composition Database</span>
+                            <span class="source-detail">FAO / ECOWAS Nutrition Division</span>
+                        </div>
+                    </li>
+                    <li class="source-item">
+                        <div class="source-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <div class="source-text">
+                            <span class="source-name">WHO Dietary Reference Intakes</span>
+                            <span class="source-detail">World Health Organisation</span>
+                        </div>
+                    </li>
+                    <li class="source-item">
+                        <div class="source-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <div class="source-text">
+                            <span class="source-name">Community-Validated Recipe Database</span>
+                            <span class="source-detail">ChopBetter internal research</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="trust-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <polyline points="9 12 11 14 15 10" />
+                    </svg>
+                    <span>Nutrition data reviewed and updated quarterly</span>
+                </div>
+            </div>
+
+        </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container nutrition-tip-wrapper">
+            <div class="nutrition-tip-banner">
+                <div class="tip-content">
+                    <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                    </svg>
+                    <div class="tip-text">
+                        <span class="tip-title">Nutrition Tip</span>
+                        <span class="tip-desc">A balanced Ghanaian meal includes half a plate of vegetables, a quarter
+                            plate of protein, and a quarter plate of complex carbohydrates like yam or plantain.</span>
+                    </div>
+                </div>
+                <div class="tip-image-container">
+                    <img src="images/produce_basket.png" alt="Fresh fruits and vegetables basket">
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-content">
+            <p>&copy; <span id="currentYear"></span> 🇬🇭 Joel Dadzie 🇬🇭 Accra, Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

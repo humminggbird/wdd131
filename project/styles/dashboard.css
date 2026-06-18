@@ -1,0 +1,462 @@
+
+.dashboard-body {
+    display: flex;
+    min-height: calc(100vh - 160px);
+}
+
+
+.dashboard-sidebar {
+    width: 280px;
+    background: var(--primary-green);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-close-btn {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    color: var(--white);
+    z-index: 10;
+}
+
+.sidebar-profile {
+    padding: 1.5rem 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    margin-bottom: 0.5rem;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--white);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+}
+
+.profile-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.35rem;
+}
+
+.profile-edit {
+    font-size: 0.85rem;
+    color: var(--primary-gold);
+    transition: text-decoration 0.2s;
+}
+
+.profile-edit:hover {
+    text-decoration: underline;
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: 0.5rem 0;
+}
+
+.sidebar-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sidebar-nav li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1.5rem;
+    color: rgba(255,255,255,0.8);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+    border-radius: 0 12px 12px 0;
+    margin-right: 0.75rem;
+}
+
+.sidebar-nav li:hover {
+    background: var(--primary-green-dark);
+    color: var(--white);
+}
+
+.sidebar-nav li.active {
+    background: rgba(0,0,0,0.15);
+    color: var(--white);
+    font-weight: 600;
+    border-left: 3px solid var(--primary-gold);
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+}
+
+.sidebar-nav li svg {
+    flex-shrink: 0;
+}
+
+.sidebar-logout {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    margin-top: auto;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+    background: none;
+    width: 100%;
+    padding: 0.75rem 0;
+    transition: color 0.2s;
+}
+
+.logout-btn:hover {
+    color: #ff7b7b;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    color: var(--white);
+}
+
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+.sidebar-overlay.active {
+    display: block;
+}
+
+
+.dashboard-main {
+    flex: 1;
+    background: var(--warm-cream);
+    padding: 2.5rem;
+    overflow-y: auto;
+}
+
+.overview-header {
+    margin-bottom: 2rem;
+}
+
+.overview-header h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--cocoa-brown);
+    margin-bottom: 0.25rem;
+}
+
+.overview-header p {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+}
+
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-box {
+    background: var(--white);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
+    border: var(--border-light);
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-box-header {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    color: var(--text-gray);
+}
+
+.circular-progress-wrap {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 0.75rem;
+}
+
+.circular-progress {
+    width: 100%;
+    height: 100%;
+}
+
+.circular-progress .track {
+    stroke: var(--warm-cream-alt);
+}
+
+.circular-progress .fill {
+    transition: stroke-dashoffset 1.5s ease;
+}
+
+.progress-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    fill: var(--primary-green);
+    font-family: var(--font-body);
+}
+
+
+.stat-big-number {
+    margin-bottom: 0.5rem;
+}
+
+.big-num {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    line-height: 1;
+}
+
+.streak .big-num {
+    color: var(--primary-gold);
+}
+
+.streak-unit {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-gray);
+    margin-top: 0.25rem;
+}
+
+.stat-caption {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-top: auto;
+}
+
+.analytics-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.analytics-card {
+    background: var(--white);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
+    border: var(--border-light);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.analytics-header {
+    margin-bottom: 1.25rem;
+    border-bottom: var(--border-light);
+    padding-bottom: 0.75rem;
+}
+
+.analytics-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--cocoa-brown);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-badge {
+    font-size: 0.75rem;
+    background: var(--warm-cream);
+    color: var(--primary-green);
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+
+.meal-history-card {
+    flex: 3;
+}
+
+.meal-history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-height: 380px;
+    overflow-y: auto;
+}
+
+.meal-history-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: var(--border-light);
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.meal-history-list li:hover {
+    background: var(--warm-cream);
+    margin: 0 -1.5rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.meal-history-list li:last-child {
+    border-bottom: none;
+}
+
+.meal-history-list img {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.meal-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-name {
+    font-weight: 600;
+    color: var(--dark-charcoal);
+    font-size: 0.95rem;
+}
+
+.meal-date {
+    font-size: 0.8rem;
+    color: var(--text-gray);
+}
+
+.meal-cal {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--primary-green);
+    white-space: nowrap;
+}
+
+.analytics-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: var(--border-light);
+}
+
+.view-all-link {
+    color: var(--primary-green);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.view-all-link:hover {
+    color: var(--primary-green-dark);
+    text-decoration: underline;
+}
+
+
+.nutrition-summary-card-dash {
+    flex: 2;
+}
+
+.nutrient-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nutrient-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nutrient-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nutrient-label span:first-child {
+    font-weight: 500;
+    color: var(--dark-charcoal);
+    font-size: 0.95rem;
+}
+
+.nutrient-pct {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+.progress-bar-track {
+    width: 100%;
+    height: 12px;
+    background: var(--warm-cream-alt);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 6px;
+    transition: width 1.2s ease;
+}
+
+.protein-bar { background: var(--primary-green); }
+.carbs-bar   { background: var(--primary-gold); }
+.fats-bar    { background: #D4633B; }
+.fiber-bar   { background: var(--primary-green); }
+
+
+.recommendations-section {
+    margin-bottom: 1rem;
+}
+
+.recommendations-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.recommendations-header h2 {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    color: var(--cocoa-brown);
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}

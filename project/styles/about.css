@@ -1,0 +1,542 @@
+body {
+    background-color: var(--warm-cream);
+}
+
+.about-hero {
+    background-color: var(--warm-cream);
+    padding: 4rem 0 5rem;
+}
+
+.hero-about-layout {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-hero-text {
+    flex: 0 0 38%;
+}
+
+.about-welcome-msg {
+    display: inline-block;
+    background: rgba(228, 178, 33, 0.15);
+    border-left: 3px solid var(--primary-gold);
+    color: var(--primary-green);
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0 var(--radius-btn) var(--radius-btn) 0;
+    margin-bottom: 1.25rem;
+}
+
+.about-hero-heading {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 700;
+    color: var(--cocoa-brown);
+    line-height: 1.05;
+    margin-bottom: 1rem;
+}
+
+.about-hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    font-weight: 400;
+    margin-bottom: 1.75rem;
+    line-height: 1.5;
+}
+
+.about-divider {
+    margin-bottom: 1.75rem;
+}
+
+.about-divider svg {
+    width: 120px;
+    height: 20px;
+    display: block;
+}
+
+.about-mission-heading {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--cocoa-brown);
+    margin-bottom: 1rem;
+}
+
+.about-mission-text {
+    font-size: 1rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    max-width: 450px;
+}
+
+.about-mission-text:last-child {
+    margin-bottom: 0;
+}
+
+.about-hero-image {
+    flex: 1;
+}
+
+.about-hero-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: var(--radius-card);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    display: block;
+}
+
+.about-info-grid,
+.about-faq-section {
+    padding: 4rem 0;
+}
+
+.about-info-grid {
+    background-color: var(--light-gray);
+}
+
+.about-faq-section {
+    background-color: var(--warm-cream);
+}
+
+.about-info-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.about-card {
+    background: var(--white);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-soft);
+    border: var(--border-light);
+    padding: 2.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.about-card-heading {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cocoa-brown);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--warm-cream);
+}
+
+.about-how-it-works {
+    flex: 0 0 63%;
+}
+
+.hiw-steps {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.hiw-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hiw-step-icon-wrap {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--warm-cream);
+    border: 2px solid rgba(228, 178, 33, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.hiw-step:hover .hiw-step-icon-wrap {
+    background: rgba(228, 178, 33, 0.15);
+    border-color: var(--primary-gold);
+}
+
+.hiw-step-icon-wrap svg {
+    width: 28px;
+    height: 28px;
+    stroke: var(--primary-green);
+}
+
+.hiw-step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--primary-gold);
+    color: var(--cocoa-brown);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    line-height: 1;
+}
+
+.hiw-step-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--dark-charcoal);
+    margin-bottom: 0.5rem;
+}
+
+.hiw-step-desc {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+    max-width: 160px;
+}
+
+.hiw-connector {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 2.1rem;
+    flex-shrink: 0;
+}
+
+.hiw-connector svg {
+    width: 40px;
+    height: 16px;
+}
+
+.about-philosophy {
+    flex: 1;
+}
+
+.philosophy-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.philosophy-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.philosophy-icon-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--warm-cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1.5px solid rgba(11, 90, 52, 0.15);
+}
+
+.philosophy-icon-wrap svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--primary-green);
+}
+
+.philosophy-icon--gold {
+    background: rgba(228, 178, 33, 0.12);
+    border-color: rgba(228, 178, 33, 0.3);
+}
+
+.philosophy-icon--gold svg {
+    stroke: var(--primary-gold-dark);
+}
+
+.philosophy-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark-charcoal);
+    margin-bottom: 0.3rem;
+}
+
+.philosophy-desc {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.about-faq-card {
+    flex: 0 0 63%;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    border-bottom: var(--border-light);
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 0;
+    background: none;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-charcoal);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.faq-question:hover {
+    color: var(--primary-green);
+}
+
+.faq-question[aria-expanded="true"] {
+    color: var(--primary-green);
+}
+
+.faq-chevron {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    stroke: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.faq-question[aria-expanded="true"] .faq-chevron {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: none;
+    padding-bottom: 1.2rem;
+}
+
+.faq-answer.open {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.faq-answer p {
+    font-size: 0.975rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.faq-item:has(.faq-question:hover) {
+    background: var(--warm-cream);
+    border-radius: var(--radius-btn);
+    margin: 0 -0.5rem;
+    padding: 0 0.5rem;
+}
+
+.about-sources-card {
+    flex: 1;
+}
+
+.about-sources-intro {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+}
+
+.sources-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.source-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+}
+
+.source-icon-wrap {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(11, 90, 52, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.source-icon-wrap svg {
+    width: 14px;
+    height: 14px;
+    stroke: var(--primary-green);
+    stroke-width: 2.5;
+}
+
+.source-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.source-name {
+    font-size: 0.975rem;
+    font-weight: 600;
+    color: var(--dark-charcoal);
+}
+
+.source-detail {
+    font-size: 0.82rem;
+    color: var(--text-gray);
+}
+
+.trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    background: rgba(11, 90, 52, 0.07);
+    border: 1px solid rgba(11, 90, 52, 0.15);
+    border-radius: var(--radius-btn);
+    padding: 0.75rem 1rem;
+    margin-top: auto;
+}
+
+.trust-badge svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--primary-green);
+    flex-shrink: 0;
+}
+
+.trust-badge span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary-green);
+}
+
+@media (max-width: 1024px) {
+    .hero-about-layout {
+        gap: 2rem;
+    }
+
+    .about-hero-text {
+        flex: 0 0 45%;
+    }
+
+    .about-how-it-works {
+        flex: 0 0 60%;
+    }
+
+    .about-faq-card {
+        flex: 0 0 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-about-layout {
+        flex-direction: column-reverse;
+    }
+
+    .about-hero-text {
+        flex: none;
+        width: 100%;
+    }
+
+    .about-hero-image {
+        width: 100%;
+    }
+
+    .about-hero-image img {
+        height: 380px;
+    }
+
+    .about-info-layout {
+        flex-direction: column;
+    }
+
+    .about-how-it-works,
+    .about-philosophy,
+    .about-faq-card,
+    .about-sources-card {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 2.5rem 0 3rem;
+    }
+
+    .about-hero-heading {
+        font-size: 2.8rem;
+    }
+
+    .about-hero-image img {
+        height: 280px;
+    }
+
+    .about-card {
+        padding: 1.75rem;
+    }
+
+    .about-card-heading {
+        font-size: 1.6rem;
+    }
+
+    .hiw-steps {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hiw-connector {
+        transform: rotate(90deg);
+        padding-top: 0;
+        align-self: center;
+    }
+
+    .hiw-step-desc {
+        max-width: 260px;
+    }
+
+    .about-info-grid,
+    .about-faq-section {
+        padding: 2.5rem 0;
+    }
+
+    .about-mission-text {
+        max-width: 100%;
+    }
+}

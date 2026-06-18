@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waakye with Fish | ChopBetter</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/recipe-details.css">
+    <link rel="stylesheet" href="styles/discovery.css">
+    <link rel="stylesheet" href="styles/nutrition-tip.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/recipes.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/recipe-details.js" defer></script>
+</head>
+<body>
+        <header>
+            <div class="kente-banner" aria-hidden="true"></div>
+
+            <div class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="images/chopbetter-logo.jpeg" alt="ChopBetter Logo" class="logo-icon">
+                </a>
+                <div class="logo-text-container">
+                    <span class="brand-name">ChopBetter!</span>
+                    <span class="tagline">The Ghanaian Daily Meal Companion</span>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html" class="active">Recipes</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            
+            <button class="user-profile-btn" aria-label="User Profile" id="profileBtn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"/>
+                </svg>
+            </button>
+        </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="recipe-hero">
+        <div class="container hero-layout">
+            <div class="hero-image-col">
+                <img src="images/waakye_meal.jpg" alt="Waakye with Fish">
+            </div>
+            <div class="hero-info-col">
+                <h1 class="recipe-title">Waakye with Fish</h1>
+                <p class="recipe-desc">A popular Ghanaian rice and beans dish served with fish, gari, boiled egg, and plantain.</p>
+                
+                <div class="recipe-quick-stats">
+                    <div class="stat-card">
+                        <span class="icon">🔥</span>
+                        <div>
+                            <span class="val">520</span>
+                            <span class="lbl">Calories</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="icon">🥩</span>
+                        <div>
+                            <span class="val">28g</span>
+                            <span class="lbl">Protein</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="icon">⏱️</span>
+                        <div>
+                            <span class="val">35 mins</span>
+                            <span class="lbl">Prep Time</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="icon">🔪</span>
+                        <div>
+                            <span class="val diff-easy">Easy</span>
+                            <span class="lbl">Difficulty</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-actions">
+                    <button class="btn-primary" id="btnAddToMealPlan">Add to Meal Plan</button>
+                    <button class="btn-secondary" id="btnAddToFavorites">
+                        <span class="fav-icon">♡</span> Add to Favorites
+                    </button>
+                </div>
+                <div id="mealPlanMessage" class="toast-message hidden">Recipe added to your meal plan!</div>
+            </div>
+        </div>
+            </section>
+
+            <section class="recipe-main-content">
+        <div class="container content-layout">
+            
+            <div class="content-primary">
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="ingredients">Ingredients</button>
+                    <button class="tab-btn" data-tab="instructions">Instructions</button>
+                    <button class="tab-btn" data-tab="nutrition">Nutrition Info</button>
+                    <button class="tab-btn" data-tab="tips">Tips</button>
+                </div>
+
+                <div class="tab-content-container">
+                    <div class="tab-pane active" id="tab-ingredients">
+                        <h2>Waakye Ingredients</h2>
+                        <ul class="ingredient-list">
+                            <li><span class="bullet">•</span> 2 cups rice</li>
+                            <li><span class="bullet">•</span> 1 cup black-eyed peas</li>
+                            <li><span class="bullet">•</span> 1 tsp salt</li>
+                            <li><span class="bullet">•</span> Sorghum leaves</li>
+                            <li><span class="bullet">•</span> Palm oil</li>
+                            <li><span class="bullet">•</span> Fish (Tilapia or Red Snapper)</li>
+                            <li><span class="bullet">•</span> Boiled eggs</li>
+                            <li><span class="bullet">•</span> Gari (Cassava flakes)</li>
+                            <li><span class="bullet">•</span> Fried plantain</li>
+                            <li><span class="bullet">•</span> 1 large onion</li>
+                            <li><span class="bullet">•</span> 3 fresh tomatoes</li>
+                            <li><span class="bullet">•</span> Fresh pepper (Scotch bonnet)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane" id="tab-instructions">
+                        <h2>Cooking Instructions</h2>
+                        <ol class="instruction-list">
+                            <li>Wash rice and beans thoroughly in clean water.</li>
+                            <li>Boil beans in a large pot until partially cooked (about 25 mins).</li>
+                            <li>Add sorghum leaves to the boiling beans to release their natural red color.</li>
+                            <li>Add the washed rice and salt. Stir gently.</li>
+                            <li>Simmer on low heat until both rice and beans are fully cooked and the water is absorbed.</li>
+                            <li>Prepare fish by seasoning with salt, ginger, and garlic, then fry until golden brown.</li>
+                            <li>Make a simple tomato sauce using blended tomatoes, onions, and pepper.</li>
+                            <li>Serve the Waakye hot, accompanied by the fried fish, a hard-boiled egg, fried plantain, and a sprinkle of gari.</li>
+                        </ol>
+                    </div>
+
+                    <div class="tab-pane" id="tab-nutrition">
+                        <h2>Detailed Nutrition Information</h2>
+                        <div class="nutrition-table-card">
+                            <table class="nutrition-table">
+                                <thead>
+                                    <tr>
+                                        <th>Nutrient</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Calories</td>
+                                        <td>520</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protein</td>
+                                        <td>28g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Carbohydrates</td>
+                                        <td>72g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fat</td>
+                                        <td>12g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fiber</td>
+                                        <td>7g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab-tips">
+                        <h2>Helpful Cooking Tips</h2>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <h3>💡 Soak beans overnight</h3>
+                                <p>This drastically reduces the cooking time and makes the beans easier to digest.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h3>💡 Use fresh fish</h3>
+                                <p>Fresh tilapia or red snapper holds its shape better when fried and tastes superior.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h3>💡 Serve hot</h3>
+                                <p>Waakye is best enjoyed immediately after cooking while the aromas are strongest.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h3>💡 Avoid overcooking rice</h3>
+                                <p>Watch the water level carefully. You want the rice to be soft but not mushy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="content-sidebar">
+                <div class="nutrition-summary-card">
+                    <h3>Nutrition Summary</h3>
+                    <div class="nut-item">
+                        <span>Calories</span>
+                        <strong>520</strong>
+                    </div>
+                    <div class="nut-item">
+                        <span>Protein</span>
+                        <strong>28g</strong>
+                    </div>
+                    <div class="nut-item">
+                        <span>Carbs</span>
+                        <strong>72g</strong>
+                    </div>
+                    <div class="nut-item">
+                        <span>Fat</span>
+                        <strong>12g</strong>
+                    </div>
+                    <div class="nut-item">
+                        <span>Fiber</span>
+                        <strong>7g</strong>
+                    </div>
+                </div>
+            </aside>
+            
+        </div>
+            </section>
+        </main>
+
+
+        <footer class="main-footer">
+        <div class="container nutrition-tip-wrapper">
+            <div class="nutrition-tip-banner">
+                <div class="tip-content">
+                    <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                    </svg>
+                    <div class="tip-text">
+                        <span class="tip-title">Nutrition Tip</span>
+                        <span class="tip-desc">A balanced Ghanaian meal includes half a plate of vegetables, a quarter plate of protein, and a quarter plate of complex carbohydrates like yam or plantain.</span>
+                    </div>
+                </div>
+                <div class="tip-image-container">
+                    <img src="images/produce_basket.png" alt="Fresh fruits and vegetables basket">
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-content">
+            <p>&copy; <span id="currentYear"></span> 🇬🇭 Joel Dadzie 🇬🇭 Accra, Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+        </footer>
+
+</body>
+</html>

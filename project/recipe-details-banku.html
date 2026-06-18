@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waakye with Fish | ChopBetter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/recipe-details.css">
+    <link rel="stylesheet" href="styles/discovery.css">
+    <link rel="stylesheet" href="styles/nutrition-tip.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/recipes.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/recipe-details.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="kente-banner" aria-hidden="true"></div>
+
+        <div class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="images/chopbetter-logo.jpeg" alt="ChopBetter Logo" class="logo-icon">
+                </a>
+                <div class="logo-text-container">
+                    <span class="brand-name">ChopBetter!</span>
+                    <span class="tagline">The Ghanaian Daily Meal Companion</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html" class="active">Recipes</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+
+            <button class="user-profile-btn" aria-label="User Profile" id="profileBtn"> 
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" />
+                </svg>
+            </button>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="recipe-hero">
+        <div class="container hero-layout">
+            <div class="hero-image-col">
+                <img src="images/banku_tilapia.png" alt="Banku and Tilapia">
+            </div>
+    
+            <div class="hero-info-col">
+                <h1 class="recipe-title">Banku and Tilapia</h1>
+                <p class="recipe-desc">Fermented corn and cassava dough served with grilled tilapia and spicy pepper sauce.
+                </p>
+    
+                <div class="recipe-quick-stats">
+                    <div class="stat-card"><span>🔥</span>
+                        <div><span class="val">540</span><span class="lbl">Calories</span></div>
+                    </div>
+                    <div class="stat-card"><span>🥩</span>
+                        <div><span class="val">35g</span><span class="lbl">Protein</span></div>
+                    </div>
+                    <div class="stat-card"><span>⏱️</span>
+                        <div><span class="val">60 mins</span><span class="lbl">Prep Time</span></div>
+                    </div>
+                    <div class="stat-card"><span>🔪</span>
+                        <div><span class="val diff-medium">Medium</span><span class="lbl">Difficulty</span></div>
+                    </div>
+                </div>
+    
+                <div class="recipe-actions">
+                    <button class="btn-primary" id="btnAddToMealPlan">Add to Meal Plan</button>
+                    <button class="btn-secondary" id="btnAddToFavorites">
+                        <span class="fav-icon">♡</span> Add to Favorites
+                    </button>
+                </div>
+    
+                <div id="mealPlanMessage" class="toast-message hidden">
+                    Recipe added to your meal plan!
+                </div>
+            </div>
+        </div>
+        </section>
+    
+        <section class="recipe-main-content">
+        <div class="container content-layout">
+    
+            <div class="content-primary">
+    
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="ingredients">Ingredients</button>
+                    <button class="tab-btn" data-tab="instructions">Instructions</button>
+                    <button class="tab-btn" data-tab="nutrition">Nutrition Info</button>
+                    <button class="tab-btn" data-tab="tips">Tips</button>
+                </div>
+    
+                <div class="tab-content-container">
+    
+                    <div class="tab-pane active" id="tab-ingredients">
+                        <h2>Ingredients</h2>
+                        <ul class="ingredient-list">
+                            <li>• Corn dough</li>
+                            <li>• Cassava dough</li>
+                            <li>• Tilapia fish</li>
+                            <li>• Pepper, onion, tomatoes</li>
+                            <li>• Ginger & garlic</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-pane" id="tab-instructions">
+                        <h2>Instructions</h2>
+                        <ol class="instruction-list">
+                            <li>Mix corn and cassava dough in water.</li>
+                            <li>Cook and stir until smooth.</li>
+                            <li>Grill seasoned tilapia.</li>
+                            <li>Prepare pepper sauce.</li>
+                            <li>Serve hot together.</li>
+                        </ol>
+                    </div>
+    
+                    <div class="tab-pane" id="tab-nutrition">
+                        <h2>Nutrition Information</h2>
+                        <div class="nutrition-table-card">
+                            <table class="nutrition-table">
+                                <tr>
+                                    <td>Calories</td>
+                                    <td>540</td>
+                                </tr>
+                                <tr>
+                                    <td>Protein</td>
+                                    <td>35g</td>
+                                </tr>
+                                <tr>
+                                    <td>Carbohydrates</td>
+                                    <td>60g</td>
+                                </tr>
+                                <tr>
+                                    <td>Fat</td>
+                                    <td>20g</td>
+                                </tr>
+                                <tr>
+                                    <td>Fiber</td>
+                                    <td>4g</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+    
+                    <div class="tab-pane" id="tab-tips">
+                        <h2>Tips</h2>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <h3>💡 Charcoal grill</h3>
+                                <p>Use charcoal for authentic smoky fish flavor.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h3>💡 Fresh pepper</h3>
+                                <p>Fresh scotch bonnet improves heat and aroma.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <aside class="content-sidebar">
+                <div class="nutrition-summary-card">
+                    <h3>Nutrition Summary</h3>
+                    <div class="nut-item"><span>Calories</span><strong>540</strong></div>
+                    <div class="nut-item"><span>Protein</span><strong>35g</strong></div>
+                    <div class="nut-item"><span>Carbs</span><strong>60g</strong></div>
+                    <div class="nut-item"><span>Fat</span><strong>20g</strong></div>
+                    <div class="nut-item"><span>Fiber</span><strong>4g</strong></div>
+                </div>
+            </aside>
+    
+        </div>
+        </section>
+    </main>
+
+
+    <footer class="main-footer">
+        <div class="container nutrition-tip-wrapper">
+            <div class="nutrition-tip-banner">
+                <div class="tip-content">
+                    <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                    </svg>
+                    <div class="tip-text">
+                        <span class="tip-title">Nutrition Tip</span>
+                        <span class="tip-desc">A balanced Ghanaian meal includes half a plate of vegetables, a quarter
+                            plate of protein, and a quarter plate of complex carbohydrates like yam or plantain.</span>
+                    </div>
+                </div>
+                <div class="tip-image-container">
+                    <img src="images/produce_basket.png" alt="Fresh fruits and vegetables basket">
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-content">
+            <p>&copy; <span id="currentYear"></span> 🇬🇭 Joel Dadzie 🇬🇭 Accra, Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

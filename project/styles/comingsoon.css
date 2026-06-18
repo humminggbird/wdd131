@@ -1,0 +1,47 @@
+.coming-soon-section {
+    background-color: var(--warm-cream);
+    padding: 96px 0;
+    text-align: center;
+}
+
+.coming-soon-layout {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.coming-soon-title {
+    font-family: var(--font-heading);
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--cocoa-brown);
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.coming-soon-subtitle {
+    font-size: 18px;
+    color: var(--text-gray);
+    margin-bottom: 32px;
+}
+
+.coming-soon-section .btn-primary {
+    display: inline-block;
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: var(--radius-btn);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.coming-soon-section .btn-primary:hover {
+    background-color: var(--primary-green-dark);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .coming-soon-title {
+        font-size: 36px;
+    }
+}

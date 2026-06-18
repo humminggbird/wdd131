@@ -1,0 +1,271 @@
+@media (max-width: 1200px) {
+    .discovery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .discovery-card:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text-area, .hero-image-area {
+        width: 100%;
+    }
+
+    .hero-image-area {
+        justify-content: center;
+    }
+
+    .hero-headline {
+        font-size: 56px;
+    }
+
+    .tip-content {
+        max-width: 100%;
+    }
+
+    .tip-image-container {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .discovery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav {
+        display: none; 
+    }
+
+    .recommendation-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-headline {
+        font-size: 42px;
+    }
+
+    .nutrition-tip-banner {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .recipe-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .discovery-layout {
+        gap: 1.5rem;
+    }
+    
+    .region-sidebar {
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .discovery-layout {
+        flex-direction: column;
+    }
+
+    .region-sidebar {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .search-controls {
+        flex-wrap: wrap;
+    }
+    
+    .btn-search, .btn-filters {
+        width: calc(50% - 0.5rem);
+    }
+
+    .search-input-group {
+        width: 100%;
+        flex: none;
+    }
+    
+    .recipe-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content-layout {
+        flex-direction: column;
+    }
+
+    .content-primary {
+        flex: 1;
+    }
+
+    .content-sidebar {
+        width: 100%;
+        position: static;
+        margin-top: 2rem;
+    }
+    
+    .hero-layout {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-layout {
+        flex-direction: column;
+    }
+
+    .hero-image-col {
+        width: 100%;
+    }
+
+    .hero-image-col img {
+        height: 300px;
+    }
+
+    .recipe-title {
+        font-size: 2.2rem;
+    }
+
+    .recipe-actions {
+        flex-direction: column;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tab-nav {
+        padding-bottom: 0.5rem;
+    }
+    
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .dashboard-sidebar {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        z-index: 1000;
+        transition: left 0.35s ease;
+        height: 100vh;
+    }
+    .dashboard-sidebar.open {
+        left: 0;
+    }
+    .sidebar-close-btn {
+        display: block;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .analytics-row {
+        flex-direction: column;
+    }
+
+    .recommendations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-main {
+        padding: 1.5rem 1rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommendations-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .top-grid,
+    .bottom-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 36px;
+    }
+
+    .page-subtitle {
+        font-size: 16px;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+
+    .action-area .btn-primary,
+    .action-area .btn-secondary {
+        width: 100%;
+    }
+
+    .progress-stepper {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 8px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .field-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .field-group input[type="text"],
+    .field-group input[type="number"],
+    .field-group select {
+        width: 100%;
+    }
+
+    .tip-image-container {
+        display: none;
+    }
+
+    .nutrition-tip-banner .tip-desc {
+        font-size: 15px;
+    }
+}

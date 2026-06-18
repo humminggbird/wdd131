@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Your Food Profile | ChopBetter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/profile-setup.css">
+    <link rel="stylesheet" href="styles/nutrition-tip.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/profile-setup.js" defer></script>
+</head>
+
+<body>
+    <header>       
+        <div class="kente-banner" aria-hidden="true"></div>
+
+        <div class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="images/chopbetter-logo.jpeg" alt="ChopBetter Logo" class="logo-icon">
+                </a>
+                <div class="logo-text-container">
+                    <span class="brand-name">ChopBetter!</span>
+                    <span class="tagline">The Ghanaian Daily Meal Companion</span>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+
+            <button class="user-profile-btn" aria-label="User Profile" id="headerProfileBtn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" />
+                </svg>
+            </button>
+        </div>
+        </div>
+    </header>
+
+    <main class="profile-setup-section">
+        <div class="container">
+
+            <div class="welcome-back-banner hidden" id="welcomeBackBanner">
+                <span class="welcome-icon">👋</span>
+                <span class="welcome-text">Welcome back, <strong id="welcomeBackName">friend</strong>! We've loaded your
+                    saved profile below.</span>
+            </div>
+
+            <div class="page-heading">
+                <h1 class="page-title">Setup Your Food Profile</h1>
+                <p class="page-subtitle">Let's personalize your meals for a healthier you.</p>
+            </div>
+
+            <div class="progress-stepper" id="progressStepper">
+                <div class="step active" data-step="1">
+                    <div class="step-circle">1</div>
+                    <span class="step-label">Personal Info</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step" data-step="2">
+                    <div class="step-circle">2</div>
+                    <span class="step-label">Preferences</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step" data-step="3">
+                    <div class="step-circle">3</div>
+                    <span class="step-label">Goals</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step" data-step="4">
+                    <div class="step-circle">4</div>
+                    <span class="step-label">Complete</span>
+                </div>
+            </div>
+
+            <form id="profileForm" novalidate>
+
+                <div class="form-grid top-grid">
+
+                    <div class="profile-card" id="cardPersonalDetails">
+                        <h2 class="card-title">Personal Details</h2>
+
+                        <div class="field-group full-width">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
+                                autocomplete="name">
+                        </div>
+
+                        <div class="field-row">
+                            <div class="field-group">
+                                <label for="age">Age</label>
+                                <select id="age" name="age">
+                                    <option value="">Select age range</option>
+                                    <option value="under-18">Under 18</option>
+                                    <option value="18-24">18 – 24</option>
+                                    <option value="25-34">25 – 34</option>
+                                    <option value="35-44">35 – 44</option>
+                                    <option value="45-54">45 – 54</option>
+                                    <option value="55-64">55 – 64</option>
+                                    <option value="65-plus">65+</option>
+                                </select>
+                            </div>
+                            <div class="field-group">
+                                <label for="weight">Weight (kg)</label>
+                                <input type="number" id="weight" name="weight" placeholder="e.g. 68" min="1" max="400">
+                            </div>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="field-group">
+                                <label for="height">Height (cm)</label>
+                                <input type="number" id="height" name="height" placeholder="e.g. 170" min="1" max="280">
+                            </div>
+                            <div class="field-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender">
+                                    <option value="">Select gender</option>
+                                    <option value="female">Female</option>
+                                    <option value="male">Male</option>
+                                    <option value="other">Other</option>
+                                    <option value="prefer-not-to-say">Prefer not to say</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-card" id="cardHealthGoals">
+                        <h2 class="card-title">Health Goals</h2>
+                        <p class="card-subtitle">Choose what matters most to you.</p>
+
+                        <div class="radio-list" role="radiogroup" aria-label="Health Goals">
+                            <label class="radio-option">
+                                <input type="radio" name="healthGoal" value="weight-loss">
+                                <span class="radio-control"></span>
+                                <span class="radio-text">Weight Loss</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="healthGoal" value="balanced-eating">
+                                <span class="radio-control"></span>
+                                <span class="radio-text">Balanced Eating</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="healthGoal" value="muscle-gain">
+                                <span class="radio-control"></span>
+                                <span class="radio-text">Muscle Gain</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="healthGoal" value="quick-meals">
+                                <span class="radio-control"></span>
+                                <span class="radio-text">Quick Meals</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="healthGoal" value="diabetic-friendly">
+                                <span class="radio-control"></span>
+                                <span class="radio-text">Diabetic-Friendly</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="healthGoal" value="heart-healthy">
+                                <span class="radio-control"></span>
+                                <span class="radio-text">Heart Healthy</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-grid bottom-grid">
+
+                    <div class="profile-card" id="cardPreferences">
+                        <h2 class="card-title">Food Preferences &amp; Allergies</h2>
+                        <p class="card-subtitle">Select all that apply.</p>
+
+                        <div class="checkbox-grid">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="foodPreferences" value="no-fish">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">No Fish</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="foodPreferences" value="no-beef">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">No Beef</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="foodPreferences" value="no-pork">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">No Pork</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="foodPreferences" value="low-sugar">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">Low Sugar</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="foodPreferences" value="vegetarian">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">Vegetarian</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="foodPreferences" value="peanut-allergy">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">Peanut Allergy</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="foodPreferences" value="vegan">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">Vegan</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="foodPreferences" value="other-allergies">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">Other Allergies</span>
+                            </label>
+                        </div>
+
+                        <div class="field-group full-width specify-field">
+                            <label for="allergySpecify">Specify (optional)</label>
+                            <input type="text" id="allergySpecify" name="allergySpecify"
+                                placeholder="e.g. shellfish, dairy...">
+                        </div>
+                    </div>
+
+                    <div class="profile-card" id="cardRegions">
+                        <h2 class="card-title">Preferred Regions / Food Types</h2>
+                        <p class="card-subtitle">Choose your preferred Ghanaian regions.</p>
+
+                        <div class="checkbox-grid">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="preferredRegions" value="greater-accra">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">Greater Accra</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="preferredRegions" value="northern">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">Northern</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="preferredRegions" value="volta">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">Volta</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="preferredRegions" value="western">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">Western</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="preferredRegions" value="central">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">Central</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="preferredRegions" value="no-preference">
+                                <span class="checkbox-control"></span>
+                                <span class="checkbox-text">No Preference</span>
+                            </label>
+                        </div>
+
+                        <label class="checkbox-option standalone-option">
+                            <input type="checkbox" id="likesForeignDishes" name="likesForeignDishes">
+                            <span class="checkbox-control"></span>
+                            <span class="checkbox-text">I enjoy continental / foreign dishes too</span>
+                        </label>
+                    </div>
+
+                    <div class="profile-card" id="cardLifestyle">
+                        <h2 class="card-title">Lifestyle &amp; Habits</h2>
+
+                        <div class="field-group full-width">
+                            <label for="mealsPerDay">Meals Per Day</label>
+                            <select id="mealsPerDay" name="mealsPerDay">
+                                <option value="">Select frequency</option>
+                                <option value="2">2 Meals</option>
+                                <option value="3">3 Meals</option>
+                                <option value="4">4 Meals</option>
+                                <option value="5">5 Meals</option>
+                            </select>
+                        </div>
+
+                        <div class="sub-section">
+                            <span class="sub-label">Cooking Skill</span>
+                            <div class="radio-list inline" role="radiogroup" aria-label="Cooking Skill">
+                                <label class="radio-option">
+                                    <input type="radio" name="cookingSkill" value="beginner">
+                                    <span class="radio-control"></span>
+                                    <span class="radio-text">Beginner</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="cookingSkill" value="intermediate">
+                                    <span class="radio-control"></span>
+                                    <span class="radio-text">Intermediate</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="cookingSkill" value="advanced">
+                                    <span class="radio-control"></span>
+                                    <span class="radio-text">Advanced</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="sub-section">
+                            <span class="sub-label">Weekly Budget</span>
+                            <div class="radio-list inline" role="radiogroup" aria-label="Weekly Budget">
+                                <label class="radio-option">
+                                    <input type="radio" name="budgetRange" value="low">
+                                    <span class="radio-control"></span>
+                                    <span class="radio-text">Low (₵0–₵150)</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="budgetRange" value="mid">
+                                    <span class="radio-control"></span>
+                                    <span class="radio-text">Mid (₵150–₵400)</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="budgetRange" value="high">
+                                    <span class="radio-control"></span>
+                                    <span class="radio-text">High (₵400+)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-area">
+                    <button type="submit" class="btn-primary" id="btnSaveProfile">Save Profile</button>
+                    <button type="button" class="btn-secondary" id="btnResetForm">Reset Form</button>
+
+                    <div id="profileToast" class="profile-toast hidden">✓ Profile saved successfully</div>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container nutrition-tip-wrapper">
+            <div class="nutrition-tip-banner">
+                <div class="tip-content">
+                    <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                    </svg>
+                    <div class="tip-text">
+                        <span class="tip-title">Nutrition Tip</span>
+                        <span class="tip-desc">A balanced Ghanaian meal includes half a plate of vegetables, a quarter
+                            plate of protein, and a quarter plate of complex carbohydrates like yam or plantain.</span>
+                    </div>
+                </div>
+                <div class="tip-image-container">
+                    <img src="images/produce_basket.png" alt="Fresh fruits and vegetables basket">
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-content">
+            <p>&copy; <span id="currentYear"></span> 🇬🇭 Joel Dadzie 🇬🇭 Accra, Ghana</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
